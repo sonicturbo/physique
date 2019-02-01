@@ -6,13 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simulateur physique"
+            android:textColor="@color/noir"
+            android:gravity="center"/>
+
+        <Button android:id="@+id/Gravite"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Gravité"/>
+
+        <Button android:id="@+id/ForceCentripete"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Force Centripète"/>
+
+        <Button android:id="@+id/Paradoxe"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Paradoxe des jumeaux"/>
+
+        <Button android:id="@+id/Onde"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Ondes Stationnaires"/>
+
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
